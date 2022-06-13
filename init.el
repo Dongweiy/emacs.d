@@ -161,6 +161,15 @@
 ;;                 ("\\.dtsi\\'" . init-dts-mode))
 ;;               auto-mode-alist))
 
+;;--------------------------------------------------------------------
+;; For showing name of file in current buffer
+;;--------------------------------------------------------------------
+(defun show-file-name ()
+  "Show the full path file name in the minibuffer."
+  (interactive)
+  (message (buffer-file-name)))
+(global-set-key (kbd "C-c f") 'show-file-name)
+
 
 
 ;; Allow access from emacsclient

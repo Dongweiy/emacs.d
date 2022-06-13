@@ -228,6 +228,10 @@
   (message (buffer-file-name)))
 (global-set-key (kbd "C-c f") 'show-file-name)
 
+(setq-default c-basic-offset 8)
+(setq c-default-style "linux"
+      c-basic-offset 8)
+
 
 
 ;; Allow access from emacsclient

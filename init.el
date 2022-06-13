@@ -151,6 +151,16 @@
 
 (require 'init-direnv)
 
+;;--------------------------------------------------------------------
+;; For dts Syntax
+;;--------------------------------------------------------------------
+;; (setq load-path (cons (expand-file-name "~/.emacs.d/lisp") load-path))
+(require 'dts-mode)
+;; (setq auto-mode-alist
+;;       (append '(("\\.dts\\'" . init-dts-mode)
+;;                 ("\\.dtsi\\'" . init-dts-mode))
+;;               auto-mode-alist))
+
 
 
 ;; Allow access from emacsclient
